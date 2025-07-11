@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot the Difference Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 id="game-title">Spot the Difference</h1>
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Time:</span>
+                    <span id="timer">00:00</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Score:</span>
+                    <span id="score">0 / 0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Hints:</span>
+                    <span id="hints">3</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-content">
+            <div class="instructions">
+                <p>🔍 Find all the differences between the two identical cartoon images. Look carefully for missing objects, color changes, or extra items!</p>
+                <p><small>💡 <strong>Tip:</strong> Common differences include: changed colors, missing accessories, different patterns, extra objects, or altered expressions. Click on the different areas!</small></p>
+            </div>
+
+            <div class="images-container">
+                <div class="image-wrapper">
+                    <h3>Image 1</h3>
+                    <div class="image-container" id="image1-container">
+                        <img id="image1" src="" alt="Game Image 1">
+                        <div class="click-overlay" id="overlay1"></div>
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <h3>Image 2</h3>
+                    <div class="image-container" id="image2-container">
+                        <img id="image2" src="" alt="Game Image 2">
+                        <div class="click-overlay" id="overlay2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <button id="hint-btn" class="btn btn-hint">💡 Use Hint</button>
+                <button id="restart-btn" class="btn btn-restart">🔄 Restart</button>
+                <button id="new-game-btn" class="btn btn-new">🎮 New Game</button>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="success-modal" class="modal">
+            <div class="modal-content">
+                <h2>🎉 Congratulations!</h2>
+                <p>You found all the differences!</p>
+                <div class="success-stats">
+                    <div class="success-stat">
+                        <strong>Time:</strong> <span id="final-time">00:00</span>
+                    </div>
+                    <div class="success-stat">
+                        <strong>Score:</strong> <span id="final-score">0</span>
+                    </div>
+                    <div class="success-stat">
+                        <strong>Accuracy:</strong> <span id="accuracy">100%</span>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+                    <button id="new-level-btn" class="btn btn-secondary">New Level</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loading-spinner"></div>
+            <p>Loading game...</p>
+        </div>
+
+        <!-- Audio Elements -->
+        <audio id="success-sound" preload="auto">
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAcBjiR1/LMe" type="audio/wav">
+        </audio>
+        <audio id="click-sound" preload="auto">
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmAcBjiR1/LMe" type="audio/wav">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

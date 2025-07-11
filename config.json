@@ -1,0 +1,54 @@
+{
+  "levels": [
+    {
+      "gameTitle": "Spot 8 Differences - Soccer Scene",
+      "images": {
+        "image1": "/images/level3-left.png.png",
+        "image2": "/images/level3-right.png.png"
+      },
+      "differences": [
+        { "x": 415, "y": 160, "width": 35, "height": 35, "description": "Player's shirt color changed from red to blue" },
+        { "x": 85, "y": 85, "width": 30, "height": 30, "description": "Missing shoe on running player" },
+        { "x": 250, "y": 70, "width": 35, "height": 35, "description": "Soccer ball pattern difference" },
+        { "x": 190, "y": 340, "width": 35, "height": 35, "description": "Different colored socks" },
+        { "x": 260, "y": 140, "width": 30, "height": 30, "description": "Missing hair detail on goalkeeper" },
+        { "x": 410, "y": 240, "width": 25, "height": 25, "description": "Grass pattern difference" },
+        { "x": 140, "y": 200, "width": 45, "height": 45, "description": "Player's expression changed" },
+        { "x": 510, "y": 110, "width": 20, "height": 20, "description": "Goal post detail missing" }
+      ]
+    },
+    {
+      "gameTitle": "Spot 5 Differences - Dog & Nature",
+      "images": {
+        "image1": "/images/level2-left.png.png",
+        "image2": "/images/level2-right.png.png"
+      },
+      "differences": [
+        { "x": 210, "y": 190, "width": 35, "height": 35, "description": "Dog's collar color changed" },
+        { "x": 340, "y": 110, "width": 30, "height": 30, "description": "Butterfly wing pattern different" },
+        { "x": 130, "y": 260, "width": 25, "height": 25, "description": "Missing flower in foreground" },
+        { "x": 460, "y": 150, "width": 30, "height": 30, "description": "Leaf shape changed on plant" },
+        { "x": 290, "y": 310, "width": 35, "height": 35, "description": "Dog's paw position different" }
+      ]
+    },
+    {
+      "gameTitle": "Spot 10 Differences - Kitchen Scene",
+      "images": {
+        "image1": "/images/level1-left.png.png",
+        "image2": "/images/level1-right.png.png"
+      },
+      "differences": [
+        { "x": 160, "y": 210, "width": 25, "height": 25, "description": "Cat's bow color changed from pink to yellow" },
+        { "x": 310, "y": 160, "width": 30, "height": 30, "description": "Girl's dress pattern different" },
+        { "x": 460, "y": 190, "width": 35, "height": 35, "description": "Dog's ear position changed" },
+        { "x": 210, "y": 130, "width": 20, "height": 20, "description": "Shelf item missing" },
+        { "x": 390, "y": 260, "width": 25, "height": 25, "description": "Bowl contents different" },
+        { "x": 110, "y": 290, "width": 30, "height": 30, "description": "Floor tile pattern changed" },
+        { "x": 510, "y": 150, "width": 20, "height": 20, "description": "Window detail missing" },
+        { "x": 260, "y": 310, "width": 25, "height": 25, "description": "Girl's shoe color different" },
+        { "x": 430, "y": 110, "width": 20, "height": 20, "description": "Cabinet handle missing" },
+        { "x": 330, "y": 330, "width": 30, "height": 30, "description": "Pet toy added on floor" }
+      ]
+    }
+  ]
+}
